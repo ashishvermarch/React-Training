@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  z-index: 100;
+  width: 95vw;
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-image: linear-gradient(59deg, rgb(94, 3, 164), rgb(19, 1, 44));
+}
+
+.h1-heading {
+  color: rgb(78, 79, 81);
+  text-align: center;
+  font-size: 45px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  padding-top: 10px;
+}
+
+.menu ul li {
+  padding: 0 20px;
+}
+
+.yllwBtn {
+  color: white;
+  background-color: rgb(255 175 0);
+  padding: 18px 40px;
+  border-radius: 10px;
+  border: transparent;
+}
+
+#section-1 {
+  padding-top: 80px;
+}
+
+#frontWall {
+  display: flex;
+  min-height: 400px;
+  justify-content: space-between;
+  padding: 10px 100px;
+  background-image: linear-gradient(59deg, rgb(94, 3, 164), rgb(19, 1, 44));
+}
+
+#imgConnect {
+  width: 600px;
+  height: 450px;
+}
+
+#frontWall_part1 {
+  max-width: 50%;
+  max-width: 750px;
+  padding: 100px 50px;
+}
+
+#frontWall_part1 h2 {
+  font-size: 35px;
+  color: white;
+  padding-bottom: 50px;
+}
+
+#frontWall_part1 h4 {
+  font-size: 22px;
+  color: white;
+  font-weight: 100;
+  padding-bottom: 50px;
+}
+
+#section-2 {
+  padding: 100px 50px;
+}
+
+#section-2 h1:first-child {
+  color: rgb(78, 79, 81);
+  text-align: center;
+  font-size: 40px;
+}
+
+#section-2 .gridParent {
+  display: grid;
+  gap: 60px 60px;
+  grid-template-areas:
+    "card-1 card-2"
+    "card-3 card-4"
+    "card-5 card-6";
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: rgb(250 250 250);
+  max-width: 600px;
+  min-height: 200px;
+  border: 1px solid rgb(234, 230, 230);
+  padding: 30px 30px;
+}
+
+.card img:first-child {
+  width: 100px;
+  height: 80px;
+  align-items: center;
+}
+
+.card div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card div:first-child h1 {
+  font-size: 35px;
+  color: rgb(78, 79, 81);
+}
+
+.card div:last-child {
+  color: rgb(151, 95, 85);
+  font-size: 18px;
+}
+
+#section-3 {
+  background-color: rgb(244 243 247);
+  padding: 100px 0px;
+}
+
+.section-3-card {
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blueBtn {
+  background-color: rgb(75 0 143);
+  color: white;
+  border-radius: 40px;
+  font-size: 22px;
+  padding: 15px 30px;
+}
+
+.card1 div:first-child,
+.card3 div:first-child,
+.card2 div:last-child,
+.card4 div:last-child {
+  margin: auto;
+  width: 90%;
+}
+
+.card1 div:last-child img,
+.card3 div:last-child img {
+  position: relative;
+  animation-name: rightToLeft;
+  animation-duration: 2s;
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.card2 div:first-child img,
+.card4 div:first-child img {
+  position: relative;
+  animation-name: leftToRight;
+  animation-duration: 2s;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.card2 div:last-child,
+.card4 div:last-child {
+  text-align: right;
+  width: 51%;
+}
+
+.card2 div:last-child h3,
+.card4 div:last-child h3 {
+  width: auto;
+}
+
+.section-3-card img {
+  width: 600px;
+  height: 500px;
+}
+
+.section-3-card h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+  color: rgb(78, 79, 81);
+}
+
+.section-3-card h3 {
+  width: 90%;
+  font-size: 25px;
+  padding-bottom: 30px;
+  color: rgb(151, 95, 85);
+  font-weight: 100;
+}
+
+#section-4 {
+  padding: 60px 0px;
+}
+
+#firstHalf-4 {
+  padding: 60px 120px;
+}
+
+.card-container-4 {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 60px;
+}
+
+.cardSec-4 {
+  padding: 30px 80px;
+  margin: 0px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px #d5d5d5;
+}
+
+.sec4-card3,
+.sec4-card4,
+.sec4-card5 {
+  padding: 45px 60px 30px 60px;
+}
+
+.lowerCards {
+  box-shadow: 10px 10px 50px -10px grey;
+  margin: 0px 50px 0px 50px;
+}
+
+.smallMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.smallMenu div {
+  margin: 30px 100px;
+  color: rgb(62, 62, 156);
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(2, 2, 72);
+}
+
+.smallMenu div:last-child {
+  opacity: 0.4;
+  border: none;
+}
+
+.blogsCards {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.B-card {
+  max-width: 400px;
+  height: 450px;
+  margin: auto;
+  border: 1px solid rgb(206, 206, 209);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.B-card:hover {
+  box-shadow: 5px 5px 20px grey;
+}
+
+.B-card img {
+  width: 100%;
+  height: 300ox;
+}
+
+.B-card-div {
+  margin: 20px;
+}
+
+.blogBtn {
+  text-align: right;
+}
+
+.blogBtn button {
+  color: rgb(4, 4, 82);
+  background-color: transparent;
+  font-size: 17px;
+  border: none;
+}
+
+.B-card-div h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.B-card-div p {
+  font-size: 17px;
+  margin-bottom: 40px;
+  color: rgb(158, 158, 161);
+}
+
+#lastBtn {
+  border: 2px solid rgb(2, 2, 72);
+  border-radius: 40px;
+  color: rgb(2, 2, 72);
+  background-color: white;
+  padding: 20px 80px;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+
+#lastBtn:hover {
+  background-color: rgb(2, 2, 72);
+  color: white;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+#footerPart1 {
+  display: flex;
+  background-image: linear-gradient(59deg, rgb(52 0 128), rgb(27, 2, 65));
+  color: white;
+}
+
+.listParent {
+  display: flex;
+  margin: 40px 90px;
+}
+
+.list {
+  padding: 20px;
+  margin: 10px 40px 10px 40px;
+}
+
+.list h2 {
+  font-size: 25px;
+}
+
+.list ul {
+  font-size: 18px;
+  padding: 30px;
+}
+
+.list ul li {
+  padding-bottom: 15px;
+}
+
+.footer-left-parent {
+  width: 500px;
+  margin: 40px 90px;
+}
+
+.footer-right-parent {
+  margin-bottom: 50px;
+}
+
+.footerLogo img {
+  width: 200px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.footerIcons img {
+  padding: 20px 20px 20px 0px;
+  margin-bottom: 25px;
+}
+
+.footerIcons img:last-child {
+  width: 46px;
+  height: 43px;
+}
+
+.address,
+.phnNo {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.address img,
+.phnNo img {
+  width: 46px;
+  height: 43px;
+}
+
+.address img {
+  padding-top: 10px;
+}
+
+.address div:last-child,
+.phnNo div:last-child {
+  margin: 10px 10px 10px 40px;
+}
+
+.address,
+.phnNo {
+  font-size: 20px;
+}
+
+.imageList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footerPart2 {
+  background-color: rgb(10 0 58);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px;
+  color: rgb(158, 158, 161);
+  font-size: 20px;
+}
