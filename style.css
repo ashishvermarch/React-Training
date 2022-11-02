@@ -8,15 +8,29 @@ a {
   color: white;
 }
 
-header {
+.header .yllwBtn {
+  padding: 0;
+}
+
+.header {
   z-index: 100;
-  width: 95vw;
+  width: 100vw;
+  height: 40px;
   position: fixed;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 0px;
   background-image: linear-gradient(59deg, rgb(94, 3, 164), rgb(19, 1, 44));
+}
+
+.wallOptional-1 {
+  display: none;
+}
+
+.header a:first-child,
+.header button:last-child {
+  margin: 0px 20px;
 }
 
 .h1-heading {
@@ -41,6 +55,7 @@ header {
   padding: 18px 40px;
   border-radius: 10px;
   border: transparent;
+  width: 230px;
 }
 
 #section-1 {
@@ -81,6 +96,10 @@ header {
 
 #section-2 {
   padding: 100px 50px;
+}
+
+.optionalImg-1 {
+  display: none;
 }
 
 #section-2 h1:first-child {
@@ -250,7 +269,7 @@ header {
 
 .lowerCards {
   box-shadow: 10px 10px 50px -10px grey;
-  margin: 0px 50px 0px 50px;
+  margin: 0px 20px 0px 20px;
 }
 
 .smallMenu {
@@ -349,6 +368,7 @@ footer {
   display: flex;
   background-image: linear-gradient(59deg, rgb(52 0 128), rgb(27, 2, 65));
   color: white;
+  width: auto;
 }
 
 .listParent {
@@ -375,7 +395,7 @@ footer {
 }
 
 .footer-left-parent {
-  width: 500px;
+  width: auto;
   margin: 40px 90px;
 }
 
@@ -437,4 +457,433 @@ footer {
   padding: 30px 90px;
   color: rgb(158, 158, 161);
   font-size: 20px;
+  width: auto;
+}
+
+@media screen and (max-width: 1572px) {
+  #footerPart1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLogo {
+    text-align: center;
+  }
+
+  .smallMenu div {
+    margin: 20px;
+  }
+  .card-container-4lower {
+    display: grid;
+    grid-template-areas:
+      "lower1 lower2"
+      "lower3 lower4"
+      "lower5 ...";
+    gap: 50px;
+  }
+
+  .cardSec-4 {
+    width: min-content;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1342px) {
+  .h1-heading {
+    font-size: 40px;
+  }
+  .blogsCards {
+    display: grid;
+    grid-template-areas:
+      "B-card-1 B-card-2"
+      "B-card-3 ...";
+    gap: 20px;
+  }
+  .threeCards {
+    display: none;
+  }
+  #section-2 .gridParent {
+    gap: 40px 40px;
+  }
+
+  .section-3-card h2 {
+    font-size: 25px;
+  }
+
+  .section-3-card h3 {
+    font-size: 20px;
+  }
+  .section-3-card img {
+    width: 428px;
+    height: 360px;
+  }
+
+  .blueBtn {
+    font-size: 17px;
+  }
+  #imgConnect {
+    width: 433px;
+    height: 351px;
+    padding: 50px 50px;
+  }
+  #frontWall_part1 h2 {
+    font-size: 27px;
+    padding: 20px 20px 20px 0px;
+  }
+
+  #frontWall_part1 h4 {
+    font-size: 17px;
+    padding: 20px 20px 20px 0px;
+  }
+  .yllwBtn {
+    font-size: 10px;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  #frontWall {
+    display: block;
+  }
+
+  .wallOptional-1 {
+    display: block;
+    text-align: center;
+  }
+
+  .wallOptional-2 {
+    display: none;
+  }
+  #frontWall_part1 {
+    padding: 50px 50px;
+  }
+  #frontWall_part1 {
+    text-align: center;
+    padding: 0px 50px 50px 50px;
+  }
+
+  #frontWall_part1 h2,
+  #frontWall_part1 h4 {
+    padding: 20px 0px 20px 0px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-3-card {
+    display: block;
+    text-align: center;
+  }
+  .optionalImg-1 {
+    display: block;
+  }
+  .optionalImg-2 {
+    display: none;
+  }
+  .card2 div:last-child,
+  .card4 div:last-child {
+    text-align: center;
+    width: 90%;
+  }
+  .card1 div:first-child img,
+  .card3 div:first-child img {
+    position: relative;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      right: -200px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 803px) {
+  .h1-heading,
+  #section-2 h1:first-child {
+    font-size: 35px;
+  }
+  .listParent {
+    display: grid;
+    grid-template-areas:
+      "list1 list2"
+      "list3 ...";
+  }
+  #footerPart2 {
+    flex-direction: column;
+  }
+  #footerPart2 div {
+    padding: 5px 40px;
+    text-align: center;
+  }
+  .imageList {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .imageList img {
+    padding-bottom: 20px;
+  }
+
+  .card-container-4 {
+    margin: 0;
+  }
+
+  .card-container-4lower {
+    display: block;
+  }
+
+  .cardSec-4 {
+    width: 300px;
+    padding: 40px 60px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .lower3,
+  .lower4,
+  .lower5 {
+    padding: 55px 60px;
+  }
+
+  #section-2 .gridParent {
+    gap: 20px 20px;
+  }
+
+  .card div:first-child h1 {
+    font-size: 23px;
+  }
+
+  .card div:first-child img {
+    width: 70px;
+    height: 60px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+  .section-3-card img {
+    width: 320px;
+    height: 298px;
+  }
+  .section-3-card h3 {
+    width: auto;
+  }
+  .section-3-card {
+    padding: 50px 50px;
+  }
+
+  #imgConnect {
+    width: 332px;
+    height: 291px;
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .h1-heading,
+  #section-2 h1:first-child {
+    font-size: 25px;
+  }
+  .footerLogo img :first-child {
+    width: auto;
+  }
+
+  .footerIcons {
+    text-align: center;
+  }
+
+  .listParent {
+    display: block;
+  }
+
+  .imageList img {
+    width: 70px;
+    height: 75px;
+  }
+
+  .blogsCards {
+    display: block;
+  }
+  .B-card {
+    margin-bottom: 20px;
+  }
+  .cardSec-4 {
+    width: 150px;
+    padding: 20px 30px;
+  }
+
+  .lowerCards img {
+    width: 103px;
+    height: 55px;
+  }
+
+  .lower3 img,
+  .lower4 img,
+  .lower5 img {
+    width: 133px;
+    height: 55px;
+  }
+
+  #section-2 .gridParent {
+    display: block;
+  }
+
+  .card div:first-child {
+    display: block;
+  }
+
+  .card div:first-child h1 {
+    font-size: 15px;
+    width: fit-content;
+  }
+
+  .card {
+    padding: 20px 20px 0px 20px;
+    margin: 20px 0px;
+  }
+
+  .smallMenu div {
+    margin: 20px 10px;
+    font-size: 20px;
+  }
+
+  .section-3-card img {
+    width: 100%;
+    height: auto;
+  }
+  .blueBtn {
+    font-size: 10px;
+  }
+  #imgConnect {
+    width: 258px;
+    height: 230px;
+  }
+
+  .header .yllwBtn {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+
+  .header img:first-child {
+    width: 76px;
+    height: 30px;
+  }
+
+  #frontWall {
+    padding: 50px;
+  }
+  #frontWall_part1 {
+    text-align: center;
+    width: fit-content;
+    padding: 0px;
+  }
+
+  #imgConnect {
+    width: 100%;
+    height: auto;
+  }
+
+  #section-4 {
+    width: auto;
+  }
+  .listParent {
+    margin: 40px 0px;
+  }
+  .footer-left-parent {
+    margin: 40px 0px;
+  }
+
+  #firstHalf-4 {
+    padding: 60px 0px;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  #footerPart2 div {
+    padding: 0;
+    width: 100%;
+  }
+
+  .B-card {
+    min-width: 140px;
+  }
+
+  .B-card-div {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .blogBtn button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header .yllwBtn {
+    font-size: 8px;
+    padding: 8px 0px;
+  }
+  .yllwBtn {
+    padding: 8px 10px;
+  }
+  .cardSec-4 {
+    width: 100px;
+  }
+  .lowerCards img {
+    width: 54px;
+    height: 35px;
+  }
+
+  .lower3 img,
+  .lower4 img,
+  .lower5 img {
+    width: 58px;
+    height: 14px;
+    padding: 8px 8px;
+  }
+
+  .cardSec-4 {
+    border-radius: 90px;
+  }
+
+  #lastBtn {
+    padding: 10px 30px;
+  }
+  .footerLogo img {
+    width: 90px;
+    height: 39px;
+  }
+  .footerIcons img:last-child {
+    width: 29px;
+    height: 30px;
+  }
+  .address img,
+  .phnNo img {
+    width: 24px;
+    height: 23px;
+  }
+
+  .address div:last-child,
+  .phnNo div:last-child {
+    font-size: 14px;
+  }
+
+  .list h2 {
+    font-size: 20px;
+  }
+
+  .list ul li {
+    font-size: 14px;
+  }
 }
